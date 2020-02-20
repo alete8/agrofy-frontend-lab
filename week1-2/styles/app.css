@@ -1,6 +1,3 @@
-body {
-    background-color: floralwhite;
-}
 nav {
     display: flex;
     flex-direction: row;
@@ -24,7 +21,7 @@ nav {
 .nav-logo, .nav-list a {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px;
     color: black;
     text-decoration: none;
 }
@@ -69,7 +66,6 @@ nav {
     justify-content: center;
     font-family: Verdana;
     font-size: 20px;
-    /* border: 5px solid black; */
 }
 
 .history-row {
@@ -128,4 +124,100 @@ nav {
 .history-double-column p {
     font-family: Verdana;
     font-size: 15px;
+}
+
+#videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #08f;
+}
+.videos-box {
+    background-color: #08f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+}
+
+.videos-box h2 {
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.pink-button {
+	background:linear-gradient(to bottom, #d64040 5%, #e3992b 100%);
+	background-color:#d64040;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.pink-button:hover {
+	background:linear-gradient(to bottom, #e3992b 5%, #d64040 100%);
+	background-color:#e3992b;
+}
+.pink-button:active {
+	position:relative;
+	top:1px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2 {
+    font-family: Verdana;
+    font-weight: bold;
+    color: #00c4ff;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-textbox {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 12px 20px;
+    margin: 5px;
+    width: 450px;
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+.form-textarea {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 12px 20px;
+    margin: 5px;
+    width: 450px;
+    height: 100px;
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-family: Verdana;
 }
