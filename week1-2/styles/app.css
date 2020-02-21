@@ -1,3 +1,28 @@
+.hamb-logo {
+    display: none;
+}
+
+.trigger-input {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav, #hero {
+        flex-wrap: wrap;
+    }
+
+    .trigger-wrapper {
+        display: none;
+    }
+
+    .trigger-input:checked + .trigger-wrapper .nav-list {
+        display: block;
+    }
+    .hamb-logo {
+        display: flex;
+    }
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -72,7 +97,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .history-column {
@@ -112,7 +138,7 @@ nav {
     font-family: Verdana;
     font-size: 40px;
     font-weight: bold;
-
+    padding: 5px;
 }
 
 .history-subtitle {
@@ -131,6 +157,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #08f;
+    
 }
 .videos-box {
     background-color: #08f;
@@ -139,7 +166,6 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 35px;
 }
 
 .videos-box h2 {
