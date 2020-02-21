@@ -11,13 +11,10 @@
         flex-wrap: wrap;
     }
 
-    .trigger-wrapper {
+    .trigger-input:not(:checked) ~ .trigger-wrapper {
         display: none;
     }
-
-    .trigger-input:checked + .trigger-wrapper .nav-list {
-        display: block;
-    }
+    
     .hamb-logo {
         display: flex;
     }
