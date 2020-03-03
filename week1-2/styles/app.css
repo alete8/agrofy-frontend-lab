@@ -262,3 +262,26 @@ nav {
     box-shadow: 0 10px 6px -6px #777;
     transition: all 0.2s linear;
 }
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.card {
+    text-align: center;
+    width: 250px;
+    margin: 1rem;
+    border: 1px solid gray;
+}

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="icon" href="../week1-2/assets/logo.png">
+</head>
+
+<body>
+  <header id="mainHeader">
+    <nav id="mainNav">  
+      <a class="nav-logo" href="home.html"><img src="assets/logo.png">Pokedex</a>
+      <input class="trigger-input" type="checkbox" id="menu">
+      <label for="menu" class="hamb-logo">
+        <img src="http://svgshare.com/i/2zL.svg" alt="">
+      </label>
+      <div class="trigger-wrapper">
+        <ul class="nav-list">        
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="pokedex.html">Pokedex</a></li>
+          <li><a href="myfavs.html">My Favs</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="history-title">
+    <h1>Pokemon</h1>
+  </div>
+
+  <div class="searchBar">
+    <input type="text" class="form-textbox">
+    <button type="button" class="lb-button">Search</button>
+  </div>
+  
+  <div id="root" class="container">
+  </div>
+
+  <footer id="footer">
+    <label>Agrofy Lab by ALete</label>
+  </footer>
+
+  <script src="src/pokedex.js"></script>
+</body>
+
+</html>
