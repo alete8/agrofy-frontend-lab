@@ -5,7 +5,8 @@ const BTN_ADD_CLASS = 'btn-primary';
 
 
 window.onload = function() {
-
+  let myFavs = [];
+  localStorage.setItem('myFavs', JSON.stringify(myFavs));;
   fetchPokemons();
 };
 
