@@ -8,8 +8,6 @@ scrollHeader = () => {
     else {
         header.classList.remove("topHeader");
     }
-    
-    console.log("El script funciona!");
 }
 
 window.addEventListener("scroll", scrollHeader);
