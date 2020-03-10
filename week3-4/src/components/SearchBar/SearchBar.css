@@ -1,0 +1,15 @@
+.searchbar_container {
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar_input {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 12px 20px;
+    margin: 5px;
+    width: 450px;
+    font-family: Verdana;
+    font-size: 15px;
+}

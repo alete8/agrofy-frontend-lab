@@ -1,9 +1,9 @@
 .header {
     display: flex;
-    max-width: 1200px;
     margin: auto;
     justify-content: space-between;
     padding: 10px;
+    background-color: #f8e994;
 }
 
 .header h2 {
