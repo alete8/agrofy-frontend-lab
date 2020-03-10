@@ -1,0 +1,22 @@
+.btn-primary {
+    background-image: linear-gradient(to right, #06AFE8 , #00CAB7);
+    border-radius:28px;
+    border:1px solid #00c4ff;
+    width: 150px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size: 15px;
+    padding: 15px 20px;
+    /* margin-top: 15px; */
+    text-decoration:none;
+    text-align: center;
+}
+
+.btn-primary:hover {
+	background-image: linear-gradient(to right, #00CAB7 , #06AFE8);
+}
+.btn-primary:active {
+	position:relative;
+	top:1px;
+}

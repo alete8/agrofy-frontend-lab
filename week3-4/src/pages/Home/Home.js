@@ -1,10 +1,12 @@
 import React from 'react';
 import './Home.css';
+import Hero from '../../components/Hero/Hero';
 
-const Home = () => (
-  <div className="home page">
-    <h1>Home</h1>
+const Home = () => {
+  return <div className="home_page">
+    <Hero />
+    
   </div>
-);
+}
 
 export default Home;

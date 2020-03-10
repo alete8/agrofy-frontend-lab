@@ -1,9 +1,10 @@
 .header {
     display: flex;
-    max-width: 1200px;
     margin: auto;
     justify-content: space-between;
+    max-width: 1200px;
     padding: 10px;
+    background-color: transparent;
 }
 
 .header h2 {

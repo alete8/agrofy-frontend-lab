@@ -1,0 +1,14 @@
+.hero_container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f8e994;
+}
+
+.hero_element {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
