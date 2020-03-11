@@ -8,7 +8,6 @@
     font-family:Verdana;
     font-size: 15px;
     padding: 15px 20px;
-    /* margin-top: 15px; */
     text-decoration:none;
     text-align: center;
 }
@@ -16,7 +15,32 @@
 .btn-primary:hover {
 	background-image: linear-gradient(to right, #00CAB7 , #06AFE8);
 }
+
 .btn-primary:active {
 	position:relative;
 	top:1px;
+}
+
+.btn-secondary {
+    background-color: white;
+    border-radius:28px;
+    border:1px solid #06AFE8;
+    width: 150px;
+    cursor:pointer;
+    color:#06AFE8;
+    font-family:Verdana;
+    font-size:15px;
+    padding:15px 20px;
+    margin-top: 15px;
+    text-decoration:none;
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    font-weight: bold;
+}
+
+.btn-secondary:active {
+        position:relative;
+        top:1px;
 }

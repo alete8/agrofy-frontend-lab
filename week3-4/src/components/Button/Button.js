@@ -8,7 +8,8 @@ const Button = (props) => {
 
   return (
     <button
-      className="btn-primary"
+      id={'btn-' + props.id}
+      className={props.className}
       onClick={() => clicked()}>
       {props.label}
     </button>
