@@ -7,7 +7,11 @@ const Header = () => {
 
     const getMenuItems = () => <ul>
         <Link to="/"><li>Home</li></Link>
+        <Link to="/#history"><li>History</li></Link>
+        <Link to="/#videos"><li>Videos</li></Link>
+        <Link to="/#contact"><li>Contact Us</li></Link>
         <Link to="/pokedex"><li>Pokedex</li></Link>
+        <Link to="/myfavs"><li>MyFavs</li></Link>
     </ul>;
 
     return <header className="header">

@@ -1,14 +1,27 @@
 .hero_container {
     display: flex;
-    max-width: 1200px;
     margin: auto;
     justify-content: space-around;
-    padding: 10px;
+    align-items: center;
+    padding: 20px;
     background-color: #f8e994;
 }
 
 .hero_element {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+}
+
+.hero_element h1 {
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 768px)  {
+    .hero_container {
+        flex-wrap: wrap;
+    }
+    .hero_container h1 {
+        font-size: 30px;
+    }
 }

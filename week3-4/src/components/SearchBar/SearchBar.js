@@ -11,7 +11,7 @@ const SearchBar = ({onSearch}) => {
                 className="searchbar_input"
                 type='text'
                 value={searchValue}
-                onChange={event => setSearchValue(event.target.value)} />
+                onChange={event => setSearchValue(event.target.value)}/>
             <Button 
                 className="btn-primary" 
                 callback={() => onSearch(searchValue)} 

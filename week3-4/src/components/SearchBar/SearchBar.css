@@ -6,9 +6,9 @@
 .searchbar_input {
     box-sizing: border-box;
     border: 1px solid gray;
-    border-radius: 15px;
-    padding: 12px 20px;
-    margin: 5px;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin-right: 10px;
     width: 450px;
     font-family: Verdana;
     font-size: 15px;

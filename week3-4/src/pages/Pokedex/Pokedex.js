@@ -13,13 +13,13 @@ const Pokedex = () => {
       buildArray(response))
   }, []);
 
- const buildArray = (pokemonsResponse) => {
-  let array = [];
-  for (let i=0; i<150; i++) {
-    array.push(buildPokemon(pokemonsResponse[i].data));
+  const buildArray = (pokemonsResponse) => {
+    let array = [];
+      for (let i=0; i<150; i++) {
+        array.push(buildPokemon(pokemonsResponse[i].data));
+      }
+      setPokemons(array);
   }
-  setPokemons(array);
- }
 
  const filterPokemon = (text) => {
   let filter, root, div;
