@@ -24,9 +24,9 @@ const Header = () => {
 
     const getMenuItems = () => <ul>
         <Link to="/"><li>Home</li></Link>
-        <Link to="/home#history"><li>History</li></Link>
-        <Link to="/#videos"><li>Videos</li></Link>
-        <Link to="/#contact"><li>Contact Us</li></Link>
+        <a href="/#history"><li>History</li></a>
+        <a href="/#videos"><li>Videos</li></a>
+        <a href="/#contact"><li>Contact Us</li></a>
         <Link to="/pokedex"><li>Pokedex</li></Link>
         <Link to="/myfavs"><li>MyFavs</li></Link>
     </ul>;

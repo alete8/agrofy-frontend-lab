@@ -50,9 +50,9 @@ const PokemonCard = (props) => {
     }
 
     const pokemonAddedToFavs = (id, favs) => {
-        return favs.indexOf(id) !== -1;
+        return favs && favs.length && favs.indexOf(id) !== -1;
     }
-
+    
     const noPropsPrevent = () => {
         if (props.pokemon){
             return <React.Fragment>

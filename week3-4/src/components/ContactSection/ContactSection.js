@@ -3,7 +3,7 @@ import './ContactSection.css';
 import Button from '../Button/Button';
 
 const ContactSection = () => {
-    return <section className="contact_container">
+    return <section id="contact" className="contact_container">
                 <h2>Contact us</h2>
                 <div className="contact_box">
                     <form action="" method="POST">
