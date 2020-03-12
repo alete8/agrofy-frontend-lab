@@ -6,7 +6,9 @@ import PokemonCard from '../../components/PokemonCard/PokemonCard';
 
 const Pokedex = () => {
   const [pokemons, setPokemons] = useState([]);
-    
+  const [filtereds, setFiltereds] = useState([]);
+
+
   useEffect(() => {
     getAllPokemons()
     .then(response =>
@@ -19,27 +21,15 @@ const Pokedex = () => {
         array.push(buildPokemon(pokemonsResponse[i].data));
       }
       setPokemons(array);
+      setFiltereds(array);
   }
 
  const filterPokemon = (text) => {
-  let filter, root, div;
-  
-  filter = text.toUpperCase();
-  root = document.getElementById("pokedexRoot");
-  div = root.getElementsByTagName('div');
+   let pokemonsFiltered = pokemons.filter(pok => 
+    pok.name.toLowerCase().includes(text.toLowerCase()));
 
-  for (let i = 0; i < div.length; i++) {
-
-    let pokeName = div[i].getElementsByTagName("h2")[0];
-    const txtValue = pokeName.textContent || pokeName.innerText;
-
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      div[i].style.display = "";
-    } else {
-      div[i].style.display = "none";
-    }
-  }
- }
+    setFiltereds(pokemonsFiltered);
+ } 
 
   return (
     <div className="pokedex_page">
@@ -48,7 +38,7 @@ const Pokedex = () => {
       </div>
       <SearchBar onSearch={filterPokemon} />
       <div id="pokedexRoot" className="pokedex_container">
-         {pokemons.map(pokemon => <PokemonCard pokemon = {pokemon} />)}
+         {filtereds.map(pokemon => <PokemonCard pokemon = {pokemon} />)}
       </div>
     </div>
   )

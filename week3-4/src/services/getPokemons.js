@@ -10,6 +10,14 @@ export let getAllPokemons = () => {
   return Promise.all(urls.map(fetchData));
 }
 
+export const getPokemonsById = (ids) => {
+  let urls = [];
+
+  ids.forEach(id =>  urls.push(`https://pokeapi.co/api/v2/pokemon/${id}`));
+
+  return Promise.all(urls.map(fetchData));
+}
+
 export let buildPokemon = (pokemonData) => {
   let types = '';
 

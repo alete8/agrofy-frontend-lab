@@ -4,6 +4,10 @@ import Button from '../Button/Button';
 
 const SearchBar = ({onSearch}) => {
     const [searchValue, setSearchValue] = useState(''); 
+    const search = e => {
+        setSearchValue(e)
+        onSearch(e)
+      }
 
     return (
         <div className="searchbar_container">
@@ -11,7 +15,7 @@ const SearchBar = ({onSearch}) => {
                 className="searchbar_input"
                 type='text'
                 value={searchValue}
-                onChange={event => setSearchValue(event.target.value)}/>
+                onChange={event => search(event.target.value) }/>
             <Button 
                 className="btn-primary" 
                 callback={() => onSearch(searchValue)} 

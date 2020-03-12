@@ -8,7 +8,7 @@ const HistorySection = () => {
     </div>
     <div className="history-row">
       <div className="history-column">
-        <img src="./pokeball.svg" width="40px"></img>
+        <img src="./pokeball.svg" width="40px" alt=""></img>
         <label className="history-year" style={{color: "#1db7dd"}}>1980</label>
       </div>
       <div className="history-double-column">
@@ -31,13 +31,13 @@ const HistorySection = () => {
         </p>
       </div>
       <div className="history-column-center">
-        <img src="./console.svg" width="40px"></img>
+        <img src="./console.svg" width="40px" alt=""></img>
         <label className="history-year" style={{color: "#b01ddd"}}>1996</label>
       </div>
     </div>
     <div className="history-row">
       <div className="history-column-bottom">
-        <img src="./charmander.svg" width="40px"></img>
+        <img src="./charmander.svg" width="40px" alt=""></img>
         <label className="history-year" style={{color: "#dd6a1d"}}>1998</label>
       </div>
       <div className="history-double-column">

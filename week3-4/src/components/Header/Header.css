@@ -85,3 +85,13 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 6px -6px #777;
+    transition: all 0.2s linear;
+}

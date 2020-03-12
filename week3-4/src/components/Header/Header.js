@@ -1,20 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
 
+    useEffect(() => {
+        const header = document.getElementById("header");
+        const sticky = header.offsetTop;
+        const scrollCallBack = window.addEventListener("scroll", () => {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        });
+        return () => {
+          window.removeEventListener("scroll", scrollCallBack);
+        };
+      }, []);
+
     const getMenuItems = () => <ul>
         <Link to="/"><li>Home</li></Link>
-        <Link to="/#history"><li>History</li></Link>
+        <Link to="/home#history"><li>History</li></Link>
         <Link to="/#videos"><li>Videos</li></Link>
         <Link to="/#contact"><li>Contact Us</li></Link>
         <Link to="/pokedex"><li>Pokedex</li></Link>
         <Link to="/myfavs"><li>MyFavs</li></Link>
     </ul>;
 
-    return <header className="header">
+    return <header id="header" className="header">
         <div className="header__logo">
           <Link to="/">
               <img className="header__logo__image" src="/pokeball.png" alt="logo" />
