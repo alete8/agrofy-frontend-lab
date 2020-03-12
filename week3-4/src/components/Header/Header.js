@@ -10,9 +10,11 @@ const Header = () => {
         const sticky = header.offsetTop;
         const scrollCallBack = window.addEventListener("scroll", () => {
           if (window.pageYOffset > sticky) {
+           // header.classList.remove("header");
             header.classList.add("sticky");
           } else {
             header.classList.remove("sticky");
+           // header.classList.add("header");
           }
         });
         return () => {
